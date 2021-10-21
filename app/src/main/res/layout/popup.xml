@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rv_list"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="@dimen/_40sdp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/cv_list"
+                      android:layout_marginStart="@dimen/_10sdp"
+                       android:layout_gravity="center"
+                       android:src="@drawable/usa"
+                       android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        tools:ignore="MissingClass" />
+
+
+                   <TextView
+                   android:textSize="@dimen/_12sdp"
+                   android:textColor="@color/white"
+                    android:id="@+id/tv_currency"
+                       android:gravity="center|start"
+                       android:layout_gravity="center"
+                  android:layout_marginStart="@dimen/_10sdp"
+                   android:text="USD"
+                       android:layout_weight=".5"
+                   android:layout_toRightOf="@+id/cv_list"
+                 android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+        />
+        <TextView
+            android:id="@+id/shortname"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="USD"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/cv_list"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            />
+
+        </LinearLayout>
+
+    <!--    <RelativeLayout-->
+<!--        android:id="@+id/rv_main"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+
+
+
+<!--            <de.hdodenhof.circleimageview.CircleImageView-->
+<!--                android:id="@+id/cv_list"-->
+<!--                android:layout_marginStart="@dimen/_10sdp"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:src="@drawable/usa"-->
+<!--                android:layout_width="@dimen/_15sdp"-->
+<!--                android:layout_height="@dimen/_15sdp"-->
+<!--                tools:ignore="MissingClass" />-->
+<!--            <TextView-->
+
+<!--                android:textSize="@dimen/_12sdp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:id="@+id/tv_currency"-->
+<!--                android:layout_marginStart="@dimen/_20sdp"-->
+<!--                android:text="USD"-->
+<!--                android:layout_toRightOf="@+id/cv_list"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_10sdp"-->
+<!--                android:layout_gravity="center_horizontal"/>-->
+<!--        <TextView-->
+
+<!--            android:textSize="@dimen/_12sdp"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_marginStart="@dimen/_20sdp"-->
+<!--            android:text="USD"-->
+<!--            android:layout_toEndOf="@+id/tv_currency"-->
+<!--            android:layout_toRightOf="@+id/tv_currency"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_10sdp"-->
+<!--            android:layout_gravity="center_horizontal"/>-->
+
+<!--    </RelativeLayout>-->
+
+<!--        <View-->
+<!--            android:layout_marginBottom="@dimen/_10ssp"-->
+<!--            android:layout_below="@+id/rv_main"-->
+<!--            android:background="@color/colorgrey"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"/>-->
+
+
+    </RelativeLayout>

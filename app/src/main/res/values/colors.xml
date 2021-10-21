@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="purple_200">#fcc133</color>-->
+<!--    <color name="purple_500">#fcc133</color>-->
+<!--    <color name="purple_700">#fcc133</color>-->
+<!--    <color name="teal_200">#fcc133</color>-->
+<!--    <color name="teal_700">#fcc133</color> -->
+
+    <color name="purple_200">#ABFBC132</color>
+    <color name="purple_500">#FBC132</color>
+    <color name="purple_700">#FBC132</color>
+    <color name="teal_200">#FFFF00</color>
+    <color name="teal_700">#FFFF00</color>
+<!--    <color name="black">#585d5e</color>-->
+    <color name="black">#0c1017</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#1E252B</color>
+    <color name="colorYellow">#FBC132</color>
+    <color name="colorgrey">#708090</color>
+    <color name="colorlightgray">#B2808080</color>
+    <color name="green">#00ff00</color>
+    <color name="coloricon">#939393</color>
+    <color name="colorbottom">#2b3138</color>
+    <color name="ticket_box_end">#da6e27</color>
+    <color name="invoice_box_start">#ace144</color>
+
+
+
+</resources>

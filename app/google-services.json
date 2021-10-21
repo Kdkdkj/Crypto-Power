@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "678648507542",
+    "project_id": "cryptopower-88a1d",
+    "storage_bucket": "cryptopower-88a1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678648507542:android:8c567d09dda28a022aa6b7",
+        "android_client_info": {
+          "package_name": "com.itbpower.crytocoins"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678648507542-0j7dsn9kakd15fqckn8paoo6hs63u5fn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBg3dOKfiMs0kh59mmUlJvDpPGDd1vghUU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678648507542-0j7dsn9kakd15fqckn8paoo6hs63u5fn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

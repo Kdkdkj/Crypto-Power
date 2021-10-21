@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main_linear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="@dimen/_40sdp">
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:weightSum="1"
+                android:background="@drawable/round_border1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/coin_icon"
+                    android:src="@drawable/coins"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+
+                        android:layout_weight=".7"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                                                <TextView
+                                                android:id="@+id/coin_name"
+                                                android:layout_gravity="center"
+                                                android:gravity="center"
+                                                android:singleLine="true"
+                                                android:textSize="@dimen/_10sdp"
+                                                android:textColor="@color/white"
+                                                android:fontFamily="@font/proxima_semi_bold"
+                                                android:text="@string/app_name"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+
+                        android:layout_weight=".3"
+                        android:layout_gravity="bottom"
+                        android:gravity="center|bottom"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                                          <TextView
+                                            android:id="@+id/tv_symbol"
+                                                android:layout_gravity="center|end"
+                                                android:gravity="center"
+                                                android:layout_marginTop="@dimen/_10sdp"
+                                                android:singleLine="true"
+                                                android:textColor="@color/colorgrey"
+                                                android:fontFamily="@font/proxima_light"
+                                                android:text="BTC"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+          </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:background="@drawable/round_border1"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_weight=".7"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/market_price"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/proxima_semi_bold"
+                    android:text="@string/app_name"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+           <LinearLayout
+               android:layout_weight=".3"
+               android:layout_width="0dp"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:layout_height="match_parent">
+               <TextView
+                   android:id="@+id/persent_24h"
+                   android:singleLine="true"
+                   android:textColor="@color/green"
+                   android:textSize="@dimen/_10sdp"
+                   android:fontFamily="@font/proxima_light"
+                   android:text="89687"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+           </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</LinearLayout>

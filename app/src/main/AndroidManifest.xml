@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.itbpower.crytocoins">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CrytoCoins"
+        tools:targetApi="n">
+
+        <activity android:name=".Activity.Rateus" />
+<!--        <meta-data-->
+<!--         android:name="com.google.android.gms.ads.APPLICATION_ID"-->
+<!--         android:value="ca-app-pub-4340097341479568~2615570491"/>-->
+<!--        <meta-data-->
+<!--            android:name="com.google.android.gms.ads.APPLICATION_ID"-->
+<!--            android:value="ca-app-pub-3940256099942544~3347511713" />-->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".Activity.SpeedTestActivity" />
+        <activity android:name=".Activity.CoinsActivity" />
+        <activity android:name=".Activity.Disclaimer" />
+        <activity android:name=".Activity.Terms" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <data android:scheme="httpsplay.google.com/store/apps/details?id=com.itbpower.crytocoins"
+                    android:host="open" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <!-- Branch init -->
+        <meta-data android:name="io.branch.sdk.BranchKey"
+            android:value="key_live_goWxq1siq29ThWo0118SZfkarzg6ztK5" />
+        <!-- Branch testing (TestMode "true" to simulate fresh installs on dev environment) -->
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false" />
+        <activity
+            android:name=".Activity.VideoShowList"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            tools:ignore="MissingClass" />
+        <activity
+            android:name=".Activity.YouTubeScreen"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            tools:ignore="MissingClass" />
+        <activity
+            android:name=".Dashboard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+                android:value="true" />
+        </activity>
+    </application>
+
+</manifest>

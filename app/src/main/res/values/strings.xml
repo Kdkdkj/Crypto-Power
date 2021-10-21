@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Crypto Power</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ping">Ping</string>
+    <string name="upload">Upload</string>
+    <string name="ping_speed">0 ms</string>
+    <string name="dwn_speed">0 Mbps</string>
+    <string name="restart_test">Restart Test</string>
+    <string name="problem_host">There was a problem in getting Host Location. Try again later.</string>
+    <string name="save">Save</string>
+
+
+    <string name="ping_based">Selecting best server based on ping...</string>
+<!--    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>-->
+    <string name="rate_us">If you enjoy using this application,would you mind taking a minute to rate it ? Thanks!</string>
+    <string name="device_not_supported">Sorry, Your device dont have either of PlayStore or supported browser.</string>
+            <string name="interstitial_ad_unit_id">ca-app-pub-4340097341479568/5867230426</string>
+
+    <string-array name="Currency_name">
+        <item>USA Dollar</item>
+        <item>Euro</item>
+        <item>British Pound</item>
+        <item>Japanese Yen</item>
+        <item>Swiss Franc</item>
+        <item>Canadian Dollar</item>
+        <item>Bitcoin</item>
+        <item>Indian Rupee</item>
+    </string-array>
+
+
+    <string-array name="More_Option">
+        <item>Privacy Policy</item>
+        <item>Disclaimer</item>
+        <item>Rate Us</item>
+        <item>Invite Friend</item>
+        <item>Speed Test</item>
+
+    </string-array>
+
+    <string-array name="Short_name">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>JPY</item>
+        <item>CHF</item>
+        <item>CAD</item>
+        <item>BTC</item>
+        <item>INR</item>
+    </string-array>
+
+    <integer-array name="flag_Images">
+        <item>@drawable/usa</item>
+        <item>@drawable/ro</item>
+        <item>@drawable/british</item>
+        <item>@drawable/yen</item>
+        <item>@drawable/swiss</item>
+        <item>@drawable/cdollar</item>
+        <item>@drawable/bit</item>
+        <item>@drawable/indian</item>
+
+    </integer-array>
+
+    <integer-array name="more_image">
+        <item>@drawable/dis_white</item>
+        <item>@drawable/term_white</item>
+        <item>@drawable/rate_white</item>
+        <item>@drawable/invite_white</item>
+        <item>@drawable/test</item>
+    </integer-array>
+
+
+
+    <string name="youAreNotUpdatedTitle">Update Available</string>
+    <string name="youAreNotUpdatedMessage">A new version of YOUR_APP_NAME is available. Please update to version\s</string>
+    <string name="youAreNotUpdatedMessage1">\s now</string>
+    <string name="update">Update</string>
+
+
+</resources>

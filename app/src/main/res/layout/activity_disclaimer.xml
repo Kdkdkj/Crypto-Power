@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:theme="@style/AppTheme.AppBarOverlay">-->
+
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="?attr/actionBarSize"-->
+<!--            android:background="@color/colorPrimary"-->
+<!--            app:popupTheme="@style/AppTheme.PopupOverlay">-->
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Terms &amp; Condiotions"-->
+<!--                android:fontFamily="@font/proxima_semi_bold"-->
+<!--                android:gravity="center"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textSize="20sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:id="@+id/toolbar_title" />-->
+<!--        </androidx.appcompat.widget.Toolbar>-->
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <androidx.core.widget.NestedScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <TextView-->
+<!--                android:layout_marginTop="@dimen/_30sdp"-->
+<!--                android:layout_marginStart="@dimen/_10sdp"-->
+<!--                android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                android:layout_marginBottom="@dimen/_10sdp"-->
+<!--                android:text="@string/terms"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:justificationMode="inter_word"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"/>-->
+
+<!--        </androidx.core.widget.NestedScrollView>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:weightSum="1"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_marginTop="@dimen/_10sdp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:weightSum="2"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_terms"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:text="Terms &amp; Condition"-->
+<!--                    android:textSize="@dimen/_15sdp"-->
+<!--                    android:fontFamily="@font/proxima_semi_bold"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:layout_height="match_parent"/>-->
+<!--                <View-->
+<!--                    android:id="@+id/view_about"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="2dp"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:layout_marginEnd="@dimen/_5sdp"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:layout_below="@+id/txt_terms"/>-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/txt_disclaimer"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:text="Disclaimer"-->
+<!--                    android:textSize="@dimen/_15sdp"-->
+<!--                    android:fontFamily="@font/proxima_semi_bold"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textColor="@color/colorgrey"-->
+<!--                    android:layout_height="match_parent"/>-->
+<!--                <View-->
+<!--                    android:id="@+id/view_review"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="2dp"-->
+<!--                    android:background="@color/colorgrey"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:layout_marginBottom="@dimen/_4sdp"-->
+<!--                    android:layout_below="@+id/txt_disclaimer"/>-->
+<!--            </LinearLayout>-->
+
+
+<!--        </LinearLayout>-->
+<!--        ///=======================Terms  layout===============-->
+
+<!--        <androidx.core.widget.NestedScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/ll_aboutme"-->
+<!--                android:orientation="vertical"-->
+<!--                android:visibility="visible"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_terms"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:visibility="visible"-->
+<!--                    android:text="@string/terms"-->
+<!--                    android:layout_margin="@dimen/_10sdp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:fontFamily="@font/proxima_light"-->
+<!--                    android:textColor="@color/white" />-->
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_disclaimer"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_margin="@dimen/_10sdp"-->
+<!--                    android:textAllCaps="false"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:text="@string/disclaimer"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:fontFamily="@font/proxima_reg"-->
+<!--                    />-->
+
+
+<!--            </LinearLayout>-->
+
+<!--        </androidx.core.widget.NestedScrollView>-->
+
+
+
+
+
+<!--        ///======================= Disclaimer layout===============-->
+
+<!--&lt;!&ndash;        <androidx.core.widget.NestedScrollView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="match_parent">&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/ll_Review"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:visibility="gone"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:orientation="vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="match_parent">&ndash;&gt;-->
+
+
+
+
+<!--&lt;!&ndash;            </LinearLayout>&ndash;&gt;-->
+
+<!--&lt;!&ndash;        </androidx.core.widget.NestedScrollView>&ndash;&gt;-->
+
+
+
+
+
+
+
+<!--    </LinearLayout>-->
+
+
+
+
+</LinearLayout>

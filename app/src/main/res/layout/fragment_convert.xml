@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <TextView
+                android:gravity="center"
+                android:fontFamily="@font/proxima_semi_bold"
+                android:layout_gravity="center"
+                android:text="More"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_morelist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:layout_below="@+id/rv_box_list"
+        android:src="@drawable/circle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"/>
+
+
+
+
+</LinearLayout>
+
+
+<!--    <LinearLayout-->
+<!--        android:weightSum="1"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_marginTop="@dimen/_6sdp"-->
+<!--            android:layout_weight=".13"-->
+<!--            android:weightSum="1"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_weight=".37"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_marginStart="@dimen/_6sdp"-->
+<!--                android:weightSum="1"-->
+<!--                android:layout_margin="@dimen/_8sdp"-->
+<!--                android:background="@drawable/round_border"-->
+<!--                android:layout_height="match_parent"-->
+<!--                tools:ignore="RtlCompat">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_width="@dimen/_50sdp"-->
+<!--                    android:layout_marginStart="@dimen/_1sdp"-->
+<!--                    android:src="@drawable/coins"-->
+<!--                    android:layout_height="@dimen/_25sdp"/>-->
+
+<!--                <TextView-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:textSize="@dimen/_15sdp"-->
+<!--                    android:fontFamily="@font/proxima_semi_bold"-->
+<!--                    android:text="BTC"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/img_btc"-->
+<!--                    android:src="@drawable/ic_down"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:foregroundGravity="center"-->
+<!--                    android:layout_width="@dimen/_20sdp"-->
+<!--                    android:layout_height="@dimen/_20sdp"/>-->
+
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_weight=".6"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_margin="@dimen/_8sdp"-->
+<!--                android:weightSum="1"-->
+<!--                android:layout_gravity="center|top"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginStart="@dimen/_6sdp"-->
+<!--                android:background="@drawable/round_border"-->
+<!--                android:layout_height="match_parent"-->
+<!--                tools:ignore="RtlCompat">-->
+
+
+
+<!--                             <TextView-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="@dimen/_10sdp"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:layout_marginStart="@dimen/_10sdp"-->
+<!--                    android:fontFamily="@font/proxima_semi_bold"-->
+<!--                    android:text="BitCoins"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+<!--                <TextView-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:layout_gravity="center|start"-->
+<!--                    android:textSize="@dimen/_10sdp"-->
+<!--                    android:layout_marginTop="@dimen/_4sdp"-->
+<!--                    android:layout_marginStart="@dimen/_10sdp"-->
+<!--                    android:fontFamily="@font/proxima_semi_bold"-->
+<!--                    android:text="B 1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+<!--        <TextView-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_gravity="center|end"-->
+<!--            android:textSize="@dimen/_12sdp"-->
+<!--            android:layout_marginEnd="@dimen/_30sdp"-->
+<!--            android:fontFamily="@font/proxima_semi_bold"-->
+<!--            android:text="1 BTC= 6150.50USD"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            tools:ignore="RtlCompat" />-->
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_marginTop="@dimen/_6sdp"-->
+<!--            android:layout_weight=".13"-->
+<!--            android:weightSum="1"-->
+<!--            android:layout_margin="@dimen/_6sdp"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_weight=".37"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_marginStart="@dimen/_6sdp"-->
+<!--                android:weightSum="1"-->
+<!--                android:layout_margin="@dimen/_8sdp"-->
+<!--                android:background="@drawable/round_border"-->
+<!--                android:layout_height="match_parent"-->
+<!--                tools:ignore="RtlCompat">-->
+
+<!--                <ImageView-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_width="@dimen/_30sdp"-->
+<!--                    android:layout_marginStart="@dimen/_5sdp"-->
+<!--                    android:src="@drawable/usa"-->
+<!--                    android:layout_height="@dimen/_25sdp"/>-->
+
+<!--                <TextView-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_marginStart="@dimen/_10sdp"-->
+<!--                    android:textSize="@dimen/_15sdp"-->
+<!--                    android:fontFamily="@font/proxima_semi_bold"-->
+<!--                    android:text="USD"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"/>-->
+<!--                <ImageView-->
+<!--                    android:src="@drawable/ic_down"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginEnd="@dimen/_10sdp"-->
+<!--                    android:layout_width="@dimen/_20sdp"-->
+<!--                    android:layout_height="@dimen/_20sdp"/>-->
+
+
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:layout_weight=".6"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_margin="@dimen/_8sdp"-->
+<!--                android:weightSum="1"-->
+<!--                android:layout_gravity="center|top"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginStart="@dimen/_6sdp"-->
+<!--                android:background="@drawable/round_border"-->
+<!--                android:layout_height="match_parent"-->
+<!--                tools:ignore="RtlCompat">-->
+
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="@dimen/_10sdp"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:fontFamily="@font/proxima_semi_bold"-->
+<!--                    android:text="US Dollar"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="@dimen/_10sdp" />-->
+
+<!--                <TextView-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:layout_gravity="center|start"-->
+<!--                    android:textSize="@dimen/_14sdp"-->
+<!--                    android:layout_marginStart="@dimen/_10sdp"-->
+<!--                    android:fontFamily="@font/proxima_semi_bold"-->
+<!--                    android:text="$6150.5000"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"/>-->
+
+
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+<!--        <TextView-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_gravity="center|end"-->
+<!--            android:textSize="@dimen/_12sdp"-->
+<!--            android:layout_marginEnd="@dimen/_30sdp"-->
+<!--            android:fontFamily="@font/proxima_semi_bold"-->
+<!--            android:text="1 USD= 0.00016 BTC"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            tools:ignore="RtlCompat" />-->
+
+
+
+
+
+
+<!--    </LinearLayout>-->
+
+
+

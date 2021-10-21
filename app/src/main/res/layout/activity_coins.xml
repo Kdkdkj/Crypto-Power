@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CoinsActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center|start"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:src="@drawable/ic_back"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:id="@+id/toolbar_back" />
+
+                <TextView
+                    android:id="@+id/coin_name"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/proxima_semi_bold"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="Bitcoin"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cv_image"
+                    android:src="@drawable/bitcoin"
+                    android:layout_marginTop="@dimen/_2ssp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_below="@+id/coin_name"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"/>
+
+
+
+
+
+                <TextView
+                    android:id="@+id/tv_symbol"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/proxima_semi_bold"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="BTC"
+                    android:textAllCaps="true"
+                    android:layout_marginTop="@dimen/_2ssp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/cv_image"
+                    android:layout_below="@+id/coin_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
